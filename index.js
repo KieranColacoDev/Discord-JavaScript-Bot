@@ -4,7 +4,7 @@ const random = require('random');
 const fs = require('fs');
 const jsonfile = require('jsonfile');
 
-const token = 'NzEyNzkwNTQ4NzQ1ODE0MTQ4.XsWtwg.uUvyJ_0bMZakO46ckKXoXUV65Jw';
+const token = ''; //Cannopt display token publicly 
 
 var stats = {};
 
@@ -183,14 +183,6 @@ Client.on('message',msg=>{
         case '!hype':
             msg.channel.send("HYPED TATUM", {files: ["./images/tatumrage.gif"]});
             break;
-
-        case '!mb':
-            msg.channel.send("Madison Beer = Wifey", {files: ["./images/madisonbeer.gif"]});
-            break;
-
-        case '!mjk':
-            msg.channel.send("Miss Julia Kelly = Queen", {files: ["./images/mjk.gif"]});
-            break;
         
         case '!help':
             const embed = new Discord.MessageEmbed().setTitle('Bot Commands')
@@ -207,9 +199,7 @@ Client.on('message',msg=>{
             .addField ('Highlights', '!highlights')
             .addField ('Tatum Dunking', '!dunk')
             .addField ('Tatum Stepback', '!stepback')
-            .addField ('Tatum Hype Face', '!hype')
-            .addField ('Madison Beer', '!mb')
-            .addField ('Miss Julia Kelly', '!mjk')
+            .addField ('Tatum Hype Face', '!hype'
             .setColor('#008348')
             msg.channel.send(embed);
             break;
