@@ -45,7 +45,7 @@ Client.on('message',msg=>{
 
     if(Date.now()-userStats.last_message>60000 || msg.content=='!shoot' || msg.content=='!ppg' || msg.content=='!ast' || msg.content=='!reb' || msg.content=='!to' 
     || msg.content=='!stl' || msg.content=='!blk' || msg.content=='!fg' || msg.content=='!ft' || msg.content=='!highlights' || msg.content=='!dunk' || msg.content=='!stepback'
-    || msg.content=='!hype' || msg.content=='!mb' || msg.content=='!mjk'){
+    || msg.content=='!hype'){
         
         userStats.xp += random.int(15,25);
         userStats.last_message = Date.now();
@@ -199,7 +199,7 @@ Client.on('message',msg=>{
             .addField ('Highlights', '!highlights')
             .addField ('Tatum Dunking', '!dunk')
             .addField ('Tatum Stepback', '!stepback')
-            .addField ('Tatum Hype Face', '!hype'
+            .addField ('Tatum Hype Face', '!hype')
             .setColor('#008348')
             msg.channel.send(embed);
             break;
